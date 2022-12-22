@@ -25,7 +25,7 @@ const getData = searchText => {
 // console.log(book?.first_publish_year);
 const displayData = (data, books) => {
     const div1 = document.createElement('div');
-    console.log(books, books.length);
+    // console.log(books, books.length);
     if (books.length === 0) {
         div1.innerHTML = `<h5 class = "text-danger"> NO BOOKS FOUND!! </h5>`;
         resultFound.appendChild(div1);
