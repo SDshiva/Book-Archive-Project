@@ -17,50 +17,24 @@
         <div class="input-group mb-3 w-50 mx-auto">
             <input type="text" id="input-field" class="form-control" placeholder="Search Books"
                 aria-label="Recipient's username" aria-describedby="button-addon2">
-            <button class="btn mx-2 btn-outline-secondary" type="button" id="search-btn">Button</button>
+            <button onclick="callData()" class="btn mx-2 btn-outline-secondary" type="button"
+                id="search-btn">Button</button>
         </div>
     </section>
-    <section class="mt-5">
-        <div class="text-center" id="spinner">
+    <section class="mt-5" id="spinner">
+        <div class="text-center">
             <div class="spinner-border" role="status">
                 <span class="visually-hidden">Loading...</span>
             </div>
         </div>
-        <div>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    </section>
+    <section id="result-found" class="text-center my-5">
 
+    </section>
+    <section class="container mx-auto">
+        <div class="row g-4" id="books-container">
+
+        </div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
